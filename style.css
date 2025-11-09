@@ -1,0 +1,131 @@
+/* Общие стили */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  background-color: #ffffff;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* ===== ШАПКА ===== */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 12px 40px;
+  border-bottom: 1px solid #e5e5e5; /* 👈 Тонкая серая линия */
+  flex-shrink: 0;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 6px #31d67b);
+  transform: scale(1.05);
+}
+
+/* Навигация */
+nav {
+  display: flex;
+  gap: 30px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #31d67b;
+}
+
+/* Кнопка входа */
+.login-btn {
+  background-color: #31d67b;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-btn:hover {
+  background-color: #28b868;
+  transform: scale(1.05);
+}
+
+/* ===== ОСНОВНОЙ КОНТЕНТ ===== */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+
+.content {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.2rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Центрированное изображение */
+.image-center {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.image-center img {
+  width: auto;
+  max-width: 90vw;
+  max-height: 50vh;
+  object-fit: contain;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* ===== ФУТЕР ===== */
+footer {
+  text-align: center;
+  padding: 16px;
+  font-size: 0.9rem;
+  color: #888;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+  flex-shrink: 0;
+}
