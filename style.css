@@ -1,4 +1,4 @@
-/* Общие стили */
+/* ===== ОБЩИЕ СТИЛИ ===== */
 html, body {
   height: 100%;
   margin: 0;
@@ -17,7 +17,7 @@ header {
   justify-content: space-between;
   background-color: #fff;
   padding: 12px 40px;
-  border-bottom: 1px solid #e5e5e5; /* 👈 Тонкая серая линия */
+  border-bottom: 1px solid #e5e5e5;
   flex-shrink: 0;
 }
 
@@ -128,4 +128,71 @@ footer {
   background-color: #fff;
   border-top: 1px solid #eee;
   flex-shrink: 0;
+}
+
+/* ===== АДАПТИВНОСТЬ ДЛЯ МОБИЛЬНЫХ ===== */
+
+/* Планшеты и маленькие ноутбуки <= 768px */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 20px;
+  }
+
+  nav {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 10px 0;
+  }
+
+  .login-btn {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .image-center img {
+    max-width: 80vw;
+    max-height: 40vh;
+  }
+}
+
+/* Смартфоны <= 480px */
+@media (max-width: 480px) {
+  header {
+    padding: 10px 15px;
+  }
+
+  nav {
+    gap: 10px;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  .login-btn {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  .image-center img {
+    max-width: 90vw;
+    max-height: 35vh;
+  }
 }
